@@ -4,10 +4,10 @@ function menuShow() {
     if (menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
         document.querySelector('.menu-mobile__button__img').src =
-            '/assets/menuHambuger.svg';
+            '/assets/menuHambugerdark.svg';
     } else{
         menuMobile.classList.add('open');
         document.querySelector('.menu-mobile__button__img').src =
-            '/assets/menuHambugerclose.svg';
+            '/assets/menuHambugerclosedark.svg';
     }
 }
