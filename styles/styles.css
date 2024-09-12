@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import url("class-standard.css");
 @import url("responsive.css");
-@import url("slider.css");
 
 html {
     overflow-x: hidden;
@@ -136,7 +135,11 @@ header {
 }
 
 .menu-mobile__button__img {
-    width: 4rem;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 4rem ;
+    height: 4rem ;
 }
 
 .open {
@@ -324,4 +327,13 @@ main {
     font-weight: 800;
     border-radius: .5rem;
     background-color: var(--colorlight);
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 200,
+        'opsz' 48
 }

@@ -1,13 +1,12 @@
-let menuMobile = document.querySelector('#menuMobile');
-let imgMenuMobile = document.querySelector('.menu-mobile__button__img');
+const menuMobile = document.querySelector('#menuMobile');
+const imgMenuMobile = document.querySelector('#icon-button-menu');
 function menuShow() {
     if (menuMobile.classList.contains('open')){
         menuMobile.classList.remove('open');
-        document.querySelector('.menu-mobile__button__img').src =
-            '/assets/menuHambugerdark.svg';
+        imgMenuMobile.innerHTML = 'menu'
     } else{
         menuMobile.classList.add('open');
-        document.querySelector('.menu-mobile__button__img').src =
-            '/assets/menuHambugerclosedark.svg';
+        imgMenuMobile.innerHTML = 'close';
     }
 }
+
