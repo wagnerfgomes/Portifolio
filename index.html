@@ -7,8 +7,16 @@
     <title>Portifólio de Wagner Felipe</title>
     <link rel="shortcut icon" href="./assets/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script defer src="./scripts/main.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <script defer type="module" src="./scripts/main.js"></script>
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="./scripts/swiper.js"></script>
+
+    <!-- swiper fim -->
+
 </head>
 
 <body>
@@ -52,12 +60,9 @@
                         <h2 class="profession">Desenvolvedor Front-end</h2>
                     </div>
                     <ul class="contacts-list">
-                        <li class="contacts-list__itens"><a href=""><img src="/assets/icon-linkedin.svg" alt=""
-                                    class="icons-socialmedia"></a></li>
-                        <li class="contacts-list__itens"><a href=""><img src="/assets/icon-github.svg" alt=""
-                                    class="icons-socialmedia"></a></li>
-                        <li class="contacts-list__itens"><a href=""><img src="/assets/Icon-gmail.svg" alt=""
-                                    class="icons-socialmedia"></a></li>
+                        <li class="contacts-list__itens"><a href=""><img src="./assets/icon-linkedin.svg" alt="" class="icons-socialmedia"></a></li>
+                        <li class="contacts-list__itens"><a href=""><img src="./assets/icon-github.svg" alt="" class="icons-socialmedia"></a></li>
+                        <li class="contacts-list__itens"><a href=""><img src="./assets/Icon-gmail.svg" alt="" class="icons-socialmedia"></a></li>
                     </ul>
                     </section>
                     <section class="about-me border-division">
@@ -94,37 +99,136 @@
                         <h2 class="section--title">
                             PROJETOS
                         </h2>
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="projects-slides">
+                                        <img src="./assets/icon-css.svg" alt="" class="projects-slides__img">
+                                        <h3 class="projects-slides__title">Nome do Projeto</h3>
+                                        <p class="projects-slides__text">
+                                            Lipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu nec ex convallis congue.
+                                            Pellentesque tincidunt lacinia
+                                            sapien nec mollis. Suspendisse iaculis malesuada metus, tristique tincidunt augue
+                                            aliquam sit amet. Aliquam erat
+                                            volutpat.
+                                        </p>
+                                        <ul class="projects-slides__list">
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-html.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-css.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-js.svg" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="conteiner__projects-slides--buttons">
+                                            <a href="" class="projects-slides__list__itens__buttons">DEPLOY</a>
+                                            <a href="" class="projects-slides__list__itens__buttons">CÓDIGO</a>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="projects-slides">
-                            <img src="./assets/icon-css.svg" alt="" class="projects-slides__img">
-                            <h3 class="projects-slides__title">Nome do Projeto</h3>
-                            <p class="projects-slides__text">
-                                Lipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu nec ex convallis congue.
-                                Pellentesque tincidunt lacinia
-                                sapien nec mollis. Suspendisse iaculis malesuada metus, tristique tincidunt augue
-                                aliquam sit amet. Aliquam erat
-                                volutpat.
-                            </p>
-                            <ul class="projects-slides__list">
-                                <li class="projects-slides__list__itens">
-                                    <img src="./assets/icon-html.svg" alt="">
-                                </li>
-                                <li class="projects-slides__list__itens">
-                                    <img src="./assets/icon-css.svg" alt="">
-                                </li>
-                                <li class="projects-slides__list__itens">
-                                    <img src="./assets/icon-js.svg" alt="">
-                                </li>
-                            </ul>
-                            <div class="conteiner__projects-slides--buttons">
-                                <a href="" class="projects-slides__list__itens__buttons">DEPLOY</a>
-                                <a href="" class="projects-slides__list__itens__buttons">CÓDIGO</a>
+                                <div class="swiper-slide">
+                                    <div class="projects-slides">
+                                        <img src="./assets/icon-css.svg" alt="" class="projects-slides__img">
+                                        <h3 class="projects-slides__title">Nome do Projeto</h3>
+                                        <p class="projects-slides__text">
+                                            Lipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu nec ex convallis congue.
+                                            Pellentesque tincidunt lacinia
+                                            sapien nec mollis. Suspendisse iaculis malesuada metus, tristique tincidunt augue
+                                            aliquam sit amet. Aliquam erat
+                                            volutpat.
+                                        </p>
+                                        <ul class="projects-slides__list">
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-html.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-css.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-js.svg" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="conteiner__projects-slides--buttons">
+                                            <a href="" class="projects-slides__list__itens__buttons">DEPLOY</a>
+                                            <a href="" class="projects-slides__list__itens__buttons">CÓDIGO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="projects-slides">
+                                        <img src="./assets/icon-css.svg" alt="" class="projects-slides__img">
+                                        <h3 class="projects-slides__title">Nome do Projeto</h3>
+                                        <p class="projects-slides__text">
+                                            Lipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu nec ex convallis congue.
+                                            Pellentesque tincidunt lacinia
+                                            sapien nec mollis. Suspendisse iaculis malesuada metus, tristique tincidunt augue
+                                            aliquam sit amet. Aliquam erat
+                                            volutpat.
+                                        </p>
+                                        <ul class="projects-slides__list">
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-html.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-css.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-js.svg" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="conteiner__projects-slides--buttons">
+                                            <a href="" class="projects-slides__list__itens__buttons">DEPLOY</a>
+                                            <a href="" class="projects-slides__list__itens__buttons">CÓDIGO</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="projects-slides">
+                                        <img src="./assets/icon-css.svg" alt="" class="projects-slides__img">
+                                        <h3 class="projects-slides__title">Nome do Projeto</h3>
+                                        <p class="projects-slides__text">
+                                            Lipsum dolor sit amet, consectetur adipiscing elit. Sed ut arcu nec ex convallis congue.
+                                            Pellentesque tincidunt lacinia
+                                            sapien nec mollis. Suspendisse iaculis malesuada metus, tristique tincidunt augue
+                                            aliquam sit amet. Aliquam erat
+                                            volutpat.
+                                        </p>
+                                        <ul class="projects-slides__list">
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-html.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-css.svg" alt="">
+                                            </li>
+                                            <li class="projects-slides__list__itens">
+                                                <img src="./assets/icon-js.svg" alt="">
+                                            </li>
+                                        </ul>
+                                        <div class="conteiner__projects-slides--buttons">
+                                            <a href="" class="projects-slides__list__itens__buttons">DEPLOY</a>
+                                            <a href="" class="projects-slides__list__itens__buttons">CÓDIGO</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
                         </div>
+
                     </section>
-                    </main>
-                    <img src="./assets/menuHambugerclosedark.svg" alt="" style="display: none;">
-                    <!--possivel correçãoa para o bug do menuhambuger-->
+    </main>
 </body>
 
 </html>
