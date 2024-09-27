@@ -53,20 +53,18 @@ header {
     flex-direction: row-reverse;
     gap: 1rem;
     padding: var(--padding-section) 2rem;
-    position: fixed;
-    background: rgba(28, 28, 28, 0.6);
 }
 
 .navegacao {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 4rem;
 }
 
 .logo {
-    height: 3rem;
+    height: 4rem;
 }
 
 .navegacao__lista {
@@ -84,7 +82,6 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
 }
 
 .banner {
