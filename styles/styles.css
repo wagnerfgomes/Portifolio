@@ -26,6 +26,8 @@ html {
 :root {
     font-size: 62.5%;
     /* var */
+    --padding-section: 3rem;
+    --colordak-opac: rgba(28, 28, 28, 0.6);
     --colordak: #1C1C1C;
     --colorlight: #FFFBD2;
     --colorpri: #ED1C24;
@@ -50,7 +52,9 @@ header {
     display: flex;
     flex-direction: row-reverse;
     gap: 1rem;
-    padding: 2.5rem 2rem;
+    padding: var(--padding-section) 2rem;
+    position: fixed;
+    background: rgba(28, 28, 28, 0.6);
 }
 
 .navegacao {
@@ -76,92 +80,11 @@ header {
     list-style: none;
 }
 
-.menu-mobile{
-    z-index: 1;
-}
-
-.menu-mobile__lista {
-    width: 50vw;
-    background-color: var(--colordak);
-    position: absolute;
-    top: -0.5rem;
-    right: -1rem;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    column-gap: .5rem;
-    list-style: none;
-    padding: 7rem 2rem 3rem 1rem;
-    border-radius: 2rem 0rem 0rem 2rem;
-    border: .2rem solid var(--colorlight);
-    box-shadow: -.3rem .3rem 1rem 0rem rgba(236, 236, 236, 0.1);
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-
-.menu-title {
-    padding-bottom: .5rem;
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--colorlight);
-    width: 100%;
-    border-radius: .1rem;
-    font-size: 2rem;
-    font-family: 'JetBrains Mono';
-    margin-bottom: .3rem;
-    border-bottom: .1rem solid var(--colorlight);
-}
-
-.menu__lista__itens a {
-    text-align: center;
-    color: var(--colorlight);
-    font-family: "JetBrains Mono";
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.menu-mobile-itens a:hover {
-    padding: 0rem 1.2rem;
-    border-bottom: .3rem solid #ED1C24;
-    color: var(--colorlight);
-}
-
-.menu-mobile-itens {
-    display: none;
-}
-
-.menu-mobile__button {
-    background-color: var(--colorlight);
-    border-radius: 1rem;
-    cursor: pointer;
-    width: 4rem;
-    height: 4rem;
-    z-index: 10;
-}
-
-.menu-mobile__button__img {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    width: 4rem ;
-    height: 4rem ;
-    text-align: center;
-}
-
-.open {
-    display: block;
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 10rem;
 }
 
 .banner {
@@ -171,7 +94,7 @@ main {
     align-items: center;
     width: 100%;
     gap: 2rem;
-    padding: 2.5rem 2rem;
+    padding: var(--padding-section) 2rem;
 }
 
 .foto {
@@ -205,7 +128,7 @@ main {
     font-weight: 700;
 }
 
-.profession {
+.profession, .footer-text {
     color: var(--colorlight);
     font-family: "JetBrains Mono";
     font-size: 1rem;
@@ -233,7 +156,7 @@ main {
     justify-content: space-between;
     flex-direction: column;
     gap: 1.8rem;
-    padding: 2rem;
+    padding: var(--padding-section);
 }
 
 .about-me__text {
@@ -267,13 +190,17 @@ main {
     justify-content: space-between;
     flex-direction: column;
     gap: 1.8rem;
-    padding: 1.5rem;
+    padding: var(--padding-section);
+}
+
+.projects .section--title{
+    align-self: flex-end;
 }
 
 .projects-slides{
-    width: 20rem;
-    height: 39.5rem;
-    padding: 1.5rem;
+    width: 32rem;
+    height: 40rem;
+    padding: 2rem 4.7rem;
     border: .1rem solid var(--colorlight);
     border-radius: 1rem;
     display: flex;
@@ -284,21 +211,22 @@ main {
 }
 
 .projects-slides__img{
-   width: 15.5rem;
-   border: .1REM solid var(--colorlight);
+    height: 15.5rem;
+    width: 100%;
 }
 
 .projects-slides__title{
     color: var(--colorlight);
     font-family: Inter;
-    font-size: 1rem;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .projects-slides__text{
-    width: 15.5rem;
+    width: 100%;
+    height: 6.5rem;
     color: var(--colorlight);
     font-family: Inter;
     font-size: .8rem;
@@ -323,25 +251,8 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
 }
-
-.projects-slides__list__itens__buttons{
-    color: var(--colordak);
-    width: 8rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-family: Inter;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 800;
-    border-radius: .5rem;
-    background-color: var(--colorlight);
-}
-
 
 .material-symbols-outlined {
     display: flex;
@@ -351,4 +262,15 @@ main {
         'wght' 700,
         'GRAD' 200,
         'opsz' 48
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-text{
+    font-size: 1.2rem;
+    padding: var(--padding-section);
 }
